@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/* Poilces:
+  Impact: */
+@import url(https://fr.allfont.net/allfont.css?fonts=impact);
+/*
+Bebas Neue */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/*
+Exo 2 */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+/*
+*/
+/* Responsive: rééquilibrer à 900px de width */
+* {
+  cursor: default;
+}
+
+body {
+  margin: 0px;
+}
+
+.top {
+  background: #181818;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+.top__img {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+.top__img__logo {
+  width: 45px;
+  height: auto;
+  margin-left: 15px;
+}
+.top__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top__title h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #e7dddd;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 50px;
+}
+.top__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+.top__nav a {
+  margin: 0 15px;
+  font-size: 27px;
+  font-family: "Impact", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #e7dddd;
+  transition: color 0.3s ease-out, -webkit-text-stroke 0.3s ease-out;
+  cursor: pointer;
+  position: relative;
+}
+.top__nav a:after {
+  bottom: -25%;
+  content: "";
+  height: 3px;
+  left: 9%;
+  position: absolute;
+  background: #e7dddd;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.top__nav a:hover:after {
+  width: 50%;
+  left: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.subtitle {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 7.5px;
+  height: 301px;
+}
+.subtitle h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #181818;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+.subtitle .categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.subtitle .categories:first-child {
+  margin-top: 25px;
+}
+
+h3 {
+  font-family: "Exo 2", sans-serif;
+  color: #181818;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: "Exo 2", sans-serif;
+  color: #181818;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .top {
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .top__img {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .top__img__logo {
+    margin: 15px 0;
+  }
+  .top__title h1 {
+    color: #181818;
+    margin: 0;
+  }
+  .top__nav {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .top__nav a {
+    margin-bottom: 10px;
+    color: #181818;
+  }
+  .top__nav a:after {
+    bottom: -10%;
+    content: "";
+    height: 3px;
+    left: 0;
+    width: 50%;
+    position: absolute;
+    background: #181818;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
