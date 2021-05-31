@@ -1,16 +1,11 @@
 @charset "UTF-8";
-/* Poilces:
-  Impact: */
-@import url(https://fr.allfont.net/allfont.css?fonts=impact);
-/*
-Bebas Neue */
+
+@import url("https://fr.allfont.net/allfont.css?fonts=impact");
+
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-/*
-Exo 2 */
+
 @import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
-/*
-*/
-/* Responsive: rééquilibrer à 900px de width */
+
 * {
   cursor: default;
 }
@@ -173,4 +168,3 @@ p {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
