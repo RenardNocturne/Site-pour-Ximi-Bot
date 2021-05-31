@@ -234,11 +234,17 @@ body {
   .container {
     flex-direction: column;
   }
-  .container img {
+  .container .subtitle {
+    margin-top: 5%;
+    align-items: flex-start;
+  }
+  .container .subtitle img {
     width: auto;
     height: 15%;
+    align-self: center;
   }
   .container .infos {
     margin-top: 5%;
+    align-items: flex-start;
   }
 }
